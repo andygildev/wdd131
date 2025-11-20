@@ -1,0 +1,33 @@
+@media (min-width: 700px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .data-box {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 260px;
+    }
+
+    .weather-box {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 260px;
+        text-align: left;
+    }
+
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-icon-desktop::after {
+        content: "🌤️";
+        margin-left: 8px;
+        font-size: 1.6rem;
+        vertical-align: middle;
+    }
+}

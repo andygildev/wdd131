@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Nafagha">
+    <title>Country Page | Andrew Nafagha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+        <div class="flag-bar"></div>
+
+        
+        <section class="hero">
+
+            <picture>
+                <source srcset="images/National-Arts-Theatre-large.webp" media="(min-width: 700px)">
+                <img src="images/National-Arts-Theatre.webp" alt="National Arts Theatre" class="hero-img">
+            </picture>
+
+
+            <div class="data-box">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 923,768 sq km</li>
+                    <li><strong>Population:</strong> 223,804,632</li>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</li>
+                    <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+                    <li><strong>Time Zone:</strong> UTC +1</li>
+                    <li><strong>Calling Code:</strong> +234</li>
+                    <li><strong>Internet TLD:</strong> .ng</li>
+                </ul>
+            </div>
+
+          
+            <div class="weather-box">
+                <h2>Weather <span class="weather-icon-desktop"></span></h2>
+
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">30°C</span></li>
+                    <li><strong>Conditions:</strong> Sunny</li>
+                    <li><strong>Wind:</strong> <span id="wind">10 km/h</span></li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                </ul>
+
+                
+                <img src="images/cloud_14876363.svg" 
+                     alt="Weather icon" 
+                     class="weather-icon-mobile">
+            </div>
+
+        </section>
+    </header>
+
+   
+    <footer>
+        <p>
+           &copy; <span id="year"></span> Andrew Nafagha 🫶 Nigeria <br>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>
