@@ -1,0 +1,144 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: #0c4a6e;
+  color: white;
+  position: relative;
+}
+
+
+.navlinks {
+  display: none;
+  flex-direction: column;
+  background-color: #0c4a6e;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  border-radius: 8px;
+  padding: 1rem;
+  justify-content: flex-end;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+
+.navlinks.open {
+  display: flex;
+}
+
+#menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.temple-contents {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.temple-contents img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #0c4a6e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.temple h1 {
+    text-align: center;
+}
+
+
+/* ---------- TEMPLE CARD STYLE (matches your screenshot) ---------- */
+.temple-card {
+  background: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 1.5rem;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  margin: 1rem auto;
+}
+
+/* Title */
+.temple-card h2,
+.temple-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Info section */
+.temple-meta p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+/* Purple labels (Location, Dedicated, Size) */
+.temple-meta p span.label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #4b0082; /* purple */
+  margin-right: 6px;
+}
+
+/* Values */
+.temple-meta p span.value {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Image */
+.temple-card img {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border: 5px solid white;
+}
