@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your review for our products and help others make informed choices.">
+    <meta name="author" content="Andrew Nafagha">
     <title>Review Confirmation</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="js/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,10 +22,18 @@
     </main>
 
     <footer>
-    <p>&copy; <span id="currentyear"></span> Andrew Nafagha | Nigeria</p>
-    <p id="lastModified"></p>
-  </footer>
+        <p>&copy; <span id="currentyear"></span> Andrew Nafagha | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 
-    
+    <script>
+        
+        let count = localStorage.getItem('reviewCount') || 0;
+        count = parseInt(count) + 1;
+        localStorage.setItem('reviewCount', count);
+
+        document.getElementById('counterMessage').textContent =
+            `You have submitted ${count} review${count > 1 ? 's' : ''}.`;
+    </script>
 </body>
 </html>
